@@ -1,0 +1,61 @@
+<!------------select tag is used to create a dropdown list 
+               the name attribute is used to reffered a form data after the form is submitted
+                if we ommit the name tag then no data will be submitted from the dropdown list
+                
+                **id attribute is needed to associates the drop down list with label
+                *** option tag inside the select attribute shows the option avilable in the 
+                dropdown list-->
+<html>
+
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        textarea{
+            resize: none;
+            height:100px;
+        }
+
+         label {
+            display: block;
+            margin-top: 10px;
+         }
+         form{
+            width:300px;
+         }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>select tag example</h2>
+        <label for="cars">choose the cars</label><br>
+        <select name="cars" id="cars" size="5" multiple>
+            <optgroup label="swedish car">
+        <option value="volvo">Volvo</option>
+        <option value="KIA">KIA</option>
+        </optgroup>
+        <optgroup label="German cars">
+            <option value="Audi">Audi</option>
+            <option value="mercedes">mercedes</option><br>
+            </optgroup>
+            </select>
+            <br><br>
+            
+
+
+
+<!-- textarea field allows us multi line input size rather than input tag
+ which is single line or accept the single line values-->
+
+ <h2>Textarea elements</h2>
+<label for="message"> your message</label>
+ <textarea name="message" cols="20" rows="4" placeholder="Type here">
+   </textarea>
+ <br><br>   
+<input type="submit">
+
+    </form>
+
+    </body>
+</html>

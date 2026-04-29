@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+    <head>
+    <style>
+        body{
+            font-family: Cambria,'Times New Roman', serif;
+            background-color: bisque;
+            
+            
+        }
+        .form_data
+        {
+            width: 300px;
+            margin: 50px,auto;
+            margin-left: 300px;
+            background-color:whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+            background-image:url(formimage.jpg) ;
+            font-size: medium;
+            text-align: justify;
+        }
+
+        h2
+        {
+            text-align:center;
+            color: black;
+        }
+
+        input{
+            width: auto;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        input[type="reset"],
+        input[type="button"]
+        {
+            color:cornflowerblue;
+            border-radius:5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover
+        {
+            color: darkblue;
+            border-radius:5px;
+        }
+        footer
+        {
+            text-align: right;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+        <h2>Sample form data</h2>
+        </header>
+        
+<div class="form_data">
+        <form action="script.html" onsubmit="saveData();">
+          <!---- <input type="hidden" value="hiddendata">-->
+            Name<br>
+            <input type="text" name="fname" id="n"><t>  
+
+             
+       
+
+           <br>
+            Email<br>
+            <input type="email" name="email" id="mail" pattern=".+@.+\.com" title="Email must end with.com" required>
+            
+             <br>
+            password<br>
+            <input type="password" id="pwd" name="pass">
+           
+             <br>
+
+            Age <br>
+
+            <input type="number" name="age" id="agec"><br>
+
+            Date<br>
+            <input type="date" name="date" id="datec"><br><br>
+
+            phone<br>
+            <input type="tel" name="phone" id="phone"><br>
+
+            Gender<br>
+            <input type="radio" name="gender" value="male">male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br><br>
+
+            Subjects<br>
+            <input type="checkbox" name="sub" value="C">C<br>
+            <input type="checkbox" name="sub" value="java">java<br>
+            <input type="checkbox" name="sub" value="python">python<br><br>
+
+            upload file<br>
+            <input type="file" ><br><br>
+
+            website<br>
+            <input type="url"><br><br>
+
+            <input type="button" value="Click">
+            <input type="reset" value="Reset">
+            <input type="submit">
+
+
+             <script>
+
+                // select elements by matching id and input the value from user and store it in variable
+          function saveData() 
+          {
+            
+            let name = document.getElementById("n").value;
+            let mail=document.getElementById("mail").value;
+            let pwd=document.getElementById("pwd").value;
+            let showage=parseInt(document.getElementById("agec").value);
+            let date=document.getElementById("datec").value;
+            let phone=document.getElementById("phone").value;
+            let gender=document.querySelector('input[name="gender"]:checked');
+            gender=gender?gender.value:"";
+            
+            let subjects=[];
+            let checkboxes=document.querySelectorAll('input[type=checkbox]:checked');
+            checkboxes.forEach(checkbox=>{
+                subjects.push(checkbox.value);
+
+            });
+
+
+            // store the values in localstorage
+             localStorage.setItem("fname",name);
+             localStorage.setItem("gmail",mail);
+             localStorage.setItem("password",pwd);
+             localStorage.setItem("age",showage);
+             localStorage.setItem("date",date);
+             localStorage.setItem("phone",phone);
+             localStorage.setItem("gender",gender);
+             localStorage.setItem("subjects",JSON.stringify(subjects));
+
+
+
+
+        }
+          
+        </script>
+          
+            
+             <br><br>
+            <footer>
+                <p style="color: cadetblue;">Designed By-Apeksha Dumbre&#9996</p>
+            </footer>
+        
+
+        </div>
+        
+        </form>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+Image Card Design
+
+Create a card that includes:
+
+Image
+Title
+Description
+Use CSS:
+Box shadow
+Border radius
+Center alignment
+
+
+Table Styling
+
+Create a table with:
+
+Student Name, Roll No, Marks
+Apply:
+Border
+Alternating row colors (zebra stripes)
+Hover effect
+
+
+Login Page
+
+Design a login form with:
+
+Username & Password
+Use CSS:
+Center the form
+Add shadow
+Style button with hover effect
+
+
+Profile Card
+
+Create a profile card with:
+
+Profile image
+Name
+Bio
+Use CSS:
+Circular image
+Center alignment
+Box shadow

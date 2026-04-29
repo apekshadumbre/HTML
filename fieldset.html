@@ -1,0 +1,67 @@
+<!------------
+<form>
+    <h2>Car Selection Form</h2>
+
+    <fieldset>
+        <legend>Car Choice</legend>
+
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="kia">KIA</option>
+            </optgroup>
+
+            <optgroup label="German Cars">
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Message</legend>
+
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="message" placeholder="Write here..."></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+</form>
+---------->
+
+<!---- fieldset: element in html is used to group the forms elemts together
+    the legend attribute is used to give the title to that group-->
+    <html>
+        <head></head>
+        <body>
+            <form>
+
+            <h2>fieldset Elemets</h2>
+            <fieldset>
+                <legend>personal details</legend>
+                <label for="fname">First name</label>
+                <input type="text" name="fname" value="Rohini"><br>
+                <label for="lname">Last name</label>
+                <input type="text" name="lname" value="More"><br>
+                
+                </fieldset>
+
+
+                <h2>select your country</h2>
+                <fieldset>
+                
+                <input list="country" name="country">
+                <datalist id="country">
+                    <option value="India">
+                        <option value="USA">
+                            <option value="UK">
+                                <option value="Australia">
+                                    <option value="Canada">
+                </datalist>
+                  </fieldset>
+                <br><br>
+             <input type="submit" value="submit">
+            </form>
+        </body>
+    </html>

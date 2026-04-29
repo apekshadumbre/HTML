@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      width: 300px;
+      border-radius: 12px;
+      overflow:hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      background: white;
+      text-align: center;
+    }
+
+    .image-box {
+      position: relative;     /* important */
+    }
+
+    .image-box img {
+      width: 100%;
+      display: block;
+    }
+
+    .image-text {
+      position: absolute;   /* text ON image */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="image-box">
+      <img src="birthday_card.jpg" alt="Birthday">
+      <div class="image-text">Happy Birthday 🎉</div>
+    </div>
+    <div class="content">
+      <div class="title">Celebrate Your Day</div>
+      <div class="desc">
+        Wishing you lots of happiness, success,and joy on your special day!
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
